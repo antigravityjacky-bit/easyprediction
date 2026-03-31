@@ -1,0 +1,15 @@
+{
+  "gate_bump_minor":       0.10,
+  "gate_bump_moderate":    0.20,
+  "gate_bump_severe":      0.40,
+  "checked_once":          0.25,
+  "checked_multiple":      0.50,
+  "trapped_inside_brief":  0.30,
+  "trapped_inside_long":   0.80,
+  "pulling_minor":         0.20,
+  "pulling_moderate":      0.50,
+  "pulling_severe":        1.00,
+  "lost_whip":             0.35,
+  "pushed_wide_per_lane":  0.15,
+  "_note": "All values in seconds. Use total_loss = sum of applicable incidents."
+}

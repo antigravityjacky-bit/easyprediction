@@ -1,0 +1,15 @@
+{
+  "SHA_TIN": {
+    "A":   0.08,
+    "B":   0.10,
+    "C":   0.13,
+    "C+3": 0.18
+  },
+  "HAPPY_VALLEY": {
+    "A":   0.15,
+    "B":   0.18,
+    "C":   0.25,
+    "C+3": 0.35
+  },
+  "_note": "Seconds lost per gate position above 1. time_loss = (gate - 1) * coefficient"
+}

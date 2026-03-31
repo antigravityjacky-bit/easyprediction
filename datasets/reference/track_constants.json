@@ -1,0 +1,46 @@
+{
+  "SHA_TIN": {
+    "circumference": 1900,
+    "straight_length": 430,
+    "direction": "right",
+    "rails": {
+      "A":   { "width": 30.5, "circumference": 1900, "bend_radius": 80 },
+      "B":   { "width": 26.5, "circumference": 1895, "bend_radius": 78 },
+      "C":   { "width": 22.5, "circumference": 1890, "bend_radius": 77 },
+      "C+3": { "width": 18.3, "circumference": 1885, "bend_radius": 76 }
+    },
+    "distances": {
+      "1000": { "num_bends": 0, "bend_length": 0,    "bend_ratio": 0.000 },
+      "1200": { "num_bends": 1, "bend_length": 485,   "bend_ratio": 0.404 },
+      "1400": { "num_bends": 1, "bend_length": 485,   "bend_ratio": 0.346 },
+      "1600": { "num_bends": 1, "bend_length": 485,   "bend_ratio": 0.303 },
+      "1650": { "num_bends": 1, "bend_length": 485,   "bend_ratio": 0.294 },
+      "1800": { "num_bends": 2, "bend_length": 970,   "bend_ratio": 0.539 },
+      "2000": { "num_bends": 2, "bend_length": 970,   "bend_ratio": 0.485 },
+      "2200": { "num_bends": 2, "bend_length": 970,   "bend_ratio": 0.441 },
+      "2400": { "num_bends": 2, "bend_length": 970,   "bend_ratio": 0.404 }
+    }
+  },
+  "HAPPY_VALLEY": {
+    "circumference": 1450,
+    "direction": "right",
+    "rails": {
+      "A":   { "width": 30.5, "straight_length": 312, "bend_radius": 52 },
+      "B":   { "width": 26.5, "straight_length": 315, "bend_radius": 54, "circumference": 1435 },
+      "C":   { "width": 22.5, "straight_length": 330, "bend_radius": 48 },
+      "C+3": { "width": 19.5, "straight_length": 335, "bend_radius": 45 }
+    },
+    "distances": {
+      "1000": { "num_bends": 1, "bend_length": 402,  "bend_ratio": 0.402 },
+      "1200": { "num_bends": 2, "bend_length": 804,  "bend_ratio": 0.670 },
+      "1650": { "num_bends": 2, "bend_length": 900,  "bend_ratio": 0.545 },
+      "1800": { "num_bends": 2, "bend_length": 964,  "bend_ratio": 0.536 },
+      "2200": { "num_bends": 3, "bend_length": 1148, "bend_ratio": 0.522 }
+    },
+    "gradient": {
+      "straight_incline_deg": 0.3,
+      "height_diff_m": 1.65,
+      "time_penalty_sec": 0.95
+    }
+  }
+}

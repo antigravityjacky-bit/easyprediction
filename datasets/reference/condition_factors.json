@@ -1,0 +1,8 @@
+{
+  "GOOD":              { "speed_factor": 1.000, "friction": 0.42, "weight_impact": 1.00, "stamina_cost": 1.00 },
+  "GOOD_TO_FIRM":      { "speed_factor": 0.980, "friction": 0.38, "weight_impact": 0.95, "stamina_cost": 0.98 },
+  "GOOD_TO_FIRM_GOOD": { "speed_factor": 0.990, "friction": 0.40, "weight_impact": 0.97, "stamina_cost": 0.99 },
+  "GOOD_TO_YIELDING":  { "speed_factor": 1.015, "friction": 0.47, "weight_impact": 1.04, "stamina_cost": 1.08 },
+  "YIELDING":          { "speed_factor": 1.030, "friction": 0.51, "weight_impact": 1.08, "stamina_cost": 1.15 },
+  "SLOW":              { "speed_factor": 1.060, "friction": 0.58, "weight_impact": 1.12, "stamina_cost": 1.25 }
+}

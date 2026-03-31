@@ -1,0 +1,16 @@
+{
+  "blinkers_half_first_time": {
+    "pullers":    -0.50,
+    "distracted": -0.30,
+    "normal":      0.00
+  },
+  "blinkers_full_first_time": -0.80,
+  "crossover_noseband":       -0.20,
+  "noseband":                 -0.10,
+  "tongue_tie":               -0.15,
+  "blinkers_removed":         +0.30,
+  "noseband_removed":         +0.10,
+  "blinkers_half_plus_crossover": -0.70,
+  "noseband_plus_tongue_tie":     -0.40,
+  "_note": "Negative = faster (seconds). Combinations use synergy values, not simple addition."
+}
