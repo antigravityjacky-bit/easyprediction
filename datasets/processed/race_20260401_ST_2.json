@@ -1,0 +1,172 @@
+{
+  "race_info": {
+    "date": "2026-04-01",
+    "venue": "SHA_TIN",
+    "venue_code": "ST",
+    "race_no": 2,
+    "race_time": "19:15",
+    "race_name": "漁灣讓賽",
+    "distance": 1650,
+    "condition": "GOOD",
+    "track_type": "ALL_WEATHER",
+    "prize_pool": 875000,
+    "classification": "CLASS_5",
+    "rating_range": "40-0"
+  },
+  "entries": [
+    {
+      "horse_number": 1,
+      "horse_name": "閃耀威龍",
+      "jockey": "潘明輝",
+      "trainer": "文家良",
+      "draw_weight_lb": 135,
+      "gate": 13,
+      "recent_form": "13/8/5/3/8/5",
+      "rating": 40,
+      "rating_change": 0
+    },
+    {
+      "horse_number": 2,
+      "horse_name": "陸小鳳",
+      "jockey": "潘頓",
+      "trainer": "葉楚航",
+      "draw_weight_lb": 134,
+      "gate": 1,
+      "recent_form": "10/6/5/4/10/9",
+      "rating": 39,
+      "rating_change": -2
+    },
+    {
+      "horse_number": 3,
+      "horse_name": "悠悠乾坤",
+      "jockey": "希威森",
+      "trainer": "桂福特",
+      "draw_weight_lb": 133,
+      "gate": 3,
+      "recent_form": "6/1/12/14/3/7",
+      "rating": 38,
+      "rating_change": 0
+    },
+    {
+      "horse_number": 4,
+      "horse_name": "電訊驕陽",
+      "jockey": "何澤堯",
+      "trainer": "徐雨石",
+      "draw_weight_lb": 133,
+      "gate": 11,
+      "recent_form": "5/2/3/6/8/2",
+      "rating": 38,
+      "rating_change": 0
+    },
+    {
+      "horse_number": 5,
+      "horse_name": "齊歡最樂",
+      "jockey": "艾兆禮",
+      "trainer": "伍鵬志",
+      "draw_weight_lb": 132,
+      "gate": 14,
+      "recent_form": "5/8/10/1/1/10",
+      "rating": 37,
+      "rating_change": -1
+    },
+    {
+      "horse_number": 6,
+      "horse_name": "一鹿歡騰",
+      "jockey": "巴度",
+      "trainer": "告東尼",
+      "draw_weight_lb": 131,
+      "gate": 5,
+      "recent_form": "9/7/13/2/2/3",
+      "rating": 36,
+      "rating_change": -2
+    },
+    {
+      "horse_number": 7,
+      "horse_name": "古惑大師",
+      "jockey": "艾道拿",
+      "trainer": "大衛希斯",
+      "draw_weight_lb": 129,
+      "gate": 7,
+      "recent_form": "9/4/6/5/9/8",
+      "rating": 34,
+      "rating_change": -2
+    },
+    {
+      "horse_number": 8,
+      "horse_name": "光輝歲月",
+      "jockey": "霍宏聲",
+      "trainer": "游達榮",
+      "draw_weight_lb": 129,
+      "gate": 2,
+      "recent_form": "8/4/7/7/2/10",
+      "rating": 34,
+      "rating_change": -2
+    },
+    {
+      "horse_number": 9,
+      "horse_name": "朗日雪峰",
+      "jockey": "奧爾民",
+      "trainer": "方嘉柏",
+      "draw_weight_lb": 127,
+      "gate": 9,
+      "recent_form": "9/1/9/6/7/8",
+      "rating": 32,
+      "rating_change": 0
+    },
+    {
+      "horse_number": 10,
+      "horse_name": "大利好運",
+      "jockey": "布文",
+      "trainer": "蔡約翰",
+      "draw_weight_lb": 126,
+      "gate": 8,
+      "recent_form": "2/5/9/11/6/12",
+      "rating": 31,
+      "rating_change": 1
+    },
+    {
+      "horse_number": 11,
+      "horse_name": "肥仔精神",
+      "jockey": "梁家俊",
+      "trainer": "巫偉傑",
+      "draw_weight_lb": 124,
+      "gate": 6,
+      "recent_form": "7/7/8/5/13/11",
+      "rating": 29,
+      "rating_change": -2
+    },
+    {
+      "horse_number": 12,
+      "horse_name": "上市魅力",
+      "jockey": "田泰安",
+      "trainer": "蘇偉賢",
+      "draw_weight_lb": 121,
+      "gate": 12,
+      "recent_form": "1/10/4/6/5/8",
+      "rating": 26,
+      "rating_change": 7
+    },
+    {
+      "horse_number": 13,
+      "horse_name": "幻影旋風",
+      "jockey": "班德禮",
+      "trainer": "丁冠豪",
+      "draw_weight_lb": 121,
+      "gate": 10,
+      "recent_form": "4/2/5/3/10/7",
+      "rating": 26,
+      "rating_change": 0
+    },
+    {
+      "horse_number": 14,
+      "horse_name": "樂矚心機",
+      "jockey": "楊明綸",
+      "trainer": "鄭俊偉",
+      "draw_weight_lb": 115,
+      "gate": 4,
+      "recent_form": "3/4/10/11/10/7",
+      "rating": 18,
+      "rating_change": 0
+    }
+  ]
+}

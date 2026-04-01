@@ -1,0 +1,148 @@
+{
+  "race": "20260401_ST_2",
+  "race_info": {
+    "date": "2026-04-01",
+    "time": "19:15",
+    "venue": "SHA_TIN",
+    "venue_code": "ST",
+    "race_no": 2,
+    "distance": 1650,
+    "field_size": 14
+  },
+  "predictions": [
+    {
+      "rank": 1,
+      "horse_number": 6,
+      "horse_name": "一鹿歡騰",
+      "jockey": "巴度",
+      "trainer": "告東尼",
+      "rating": 36,
+      "recent_form_avg": 6.0,
+      "jockey_top3_rate": 0.223,
+      "confidence": "VERY_HIGH",
+      "confidence_score": 0.95,
+      "rationale": "A和B共識馬 | 評分36(場地高) | 近績avg 6.0(分場最佳) | 騎師巴度22.3%"
+    },
+    {
+      "rank": 2,
+      "horse_number": 8,
+      "horse_name": "光輝歲月",
+      "jockey": "霍宏聲",
+      "trainer": "游達榮",
+      "rating": 34,
+      "recent_form_avg": 6.3,
+      "jockey_top3_rate": 0.192,
+      "confidence": "VERY_HIGH",
+      "confidence_score": 0.94,
+      "rationale": "A和B共識馬 | 評分34 | 近績avg 6.3(穩定) | 騎師霍宏聲19.2%"
+    },
+    {
+      "rank": 3,
+      "horse_number": 10,
+      "horse_name": "大利好運",
+      "jockey": "布文",
+      "trainer": "蔡約翰",
+      "rating": 31,
+      "recent_form_avg": 7.5,
+      "jockey_top3_rate": 0.335,
+      "confidence": "HIGH",
+      "confidence_score": 0.82,
+      "rationale": "A獨選 | 騎師布文33.5%(全場最強!) | 教練蔡約翰(隱藏優勢) | vs B選的7/9, 布文騎師實力更強"
+    }
+  ],
+  "top3_prediction": [6, 8, 10],
+  "predictor_comparison": {
+    "predictor_a": [6, 8, 10, 14],
+    "predictor_b": [6, 7, 8, 9],
+    "consensus": [6, 8],
+    "a_only": [10, 14],
+    "b_only": [7, 9],
+    "our_choice": [6, 8, 10]
+  },
+  "decision_logic": {
+    "consensus_horses": {
+      "6": "A+B共識 → 採納",
+      "8": "A+B共識 → 採納"
+    },
+    "third_horse_selection": {
+      "considered": [10, 14, 7, 9],
+      "selected": 10,
+      "reasoning": [
+        "騎師布文(33.5%)是全場最強",
+        "評分31 > 14號(18), 風險較低",
+        "評分31 > 7/9(34/32)的邏輯: 騎師實力彌補馬匹評分差距",
+        "布文33.5% > 奧爾民27.7% > 艾道拿18.9%"
+      ]
+    }
+  },
+  "feature_importance_inferred": {
+    "tier_1": [
+      "評分 (Rating)",
+      "近績平均排名 (Recent form average position)",
+      "騎師Top3率 (Jockey win rate)",
+      "近期趨勢 (Last 3 races trend)"
+    ],
+    "tier_2": [
+      "教練隱藏優勢 (Trainer hidden advantage)",
+      "馬匹體重 (Horse weight)",
+      "距離親和力 (Distance affinity)",
+      "騎師-馬匹組合歷史"
+    ]
+  },
+  "predictor_analysis": {
+    "predictor_a_profile": {
+      "name": "激進型預測者",
+      "characteristics": [
+        "騎師實力優先 (重視布文33.5%)",
+        "教練優勢依賴 (選擇蔡約翰/鄭俊偉)",
+        "風險容忍高 (願選評分18的黑馬14號)",
+        "評分依賴較低 (10號評分31, 14號評分18)"
+      ],
+      "inference": "A掌握更多'隱藏信息' - 可能是教練優勢或馬房內部信息"
+    },
+    "predictor_b_profile": {
+      "name": "保守型預測者",
+      "characteristics": [
+        "評分+穩定性優先 (選34/32/32評分馬)",
+        "不選低評分馬 (最低選9號32分)",
+        "騎師作為次要因素 (27.7%奧爾民, 18.9%艾道拿)",
+        "馬匹體重考量 (9號體重1264kg最重)"
+      ],
+      "inference": "B使用公開信息 (評分/近績/騎師) - 較為保守的演算法"
+    }
+  },
+  "risk_assessment": {
+    "high_confidence": [6, 8],
+    "medium_confidence": [10],
+    "alternative_third_choices": {
+      "9": {
+        "pros": ["奧爾民騎師27.7%", "體重1264kg最重"],
+        "cons": ["評分低32", "近績avg 6.7不如10號"],
+        "rejection_reason": "騎師強度不如布文"
+      },
+      "7": {
+        "pros": ["評分34中等", "近績avg 6.8"],
+        "cons": ["艾道拿騎師18.9%(較弱)", "無教練優勢"],
+        "rejection_reason": "騎師實力差, 無補強空間"
+      },
+      "14": {
+        "pros": ["A大膽選擇", "可能黑馬"],
+        "cons": ["評分18(全場最低)", "騎師楊明綸14.5%"],
+        "rejection_reason": "風險太高, 與保守原則不符"
+      }
+    }
+  },
+  "validation_plan": {
+    "race_start_time": "2026-04-01 19:15",
+    "result_analysis": "Race 2完成後立即與A/B預測對比",
+    "metrics": [
+      "我們Top3命中率 (should be 1.0 if 6,8,10 exact)",
+      "A Top4命中率",
+      "B Top4命中率",
+      "共識馬(6,8)命中率 (should be ~100% if both in top3)",
+      "第三馬邏輯驗證 (10 vs 7,9,14 performance)"
+    ]
+  },
+  "timestamp": "2026-04-01T14:45:00+08:00",
+  "status": "READY_FOR_PUBLICATION"
+}
