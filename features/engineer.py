@@ -48,6 +48,69 @@ FEATURE_NAMES = [
     "gate_x_venue", "weight_x_distance",
     # Last race FAP (1)
     "last_fap",
+    # ========== PHASE 1 FEATURES (28) — A/B Consensus-Based Signals ==========
+    # Consensus Module (4) — Encodes A & B model agreement signals
+    "consensus_agreement_signal",
+    "consensus_agreement_strength",
+    "consensus_divergence_factor",
+    "consensus_is_consensus_pick",
+    # Confidence Module (5) — Encodes selection position confidence
+    "conf_a_position",
+    "conf_b_position",
+    "conf_combined_confidence",
+    "conf_agreement",
+    "conf_banker_signal",
+    # Scenario Module (3) — Venue & field-level context
+    "scenario_venue_alignment",
+    "scenario_field_strength",
+    "scenario_expected_uncertainty",
+    # Recency Module (5) — Recent form & momentum
+    "recency_3races_win_rate",
+    "recency_6races_trend",
+    "recency_form_momentum",
+    "recency_layoff_penalty",
+    "recency_strength",
+    # Pairing Module (4) — Jockey-horse combination effects
+    "pairing_jockey_horse_affinity",
+    "pairing_jockey_recent_form",
+    "pairing_distance_affinity",
+    "pairing_confidence",
+    # Relative Strength Module (5) — Field-relative performance
+    "strength_vs_field_speed",
+    "strength_vs_field_winrate",
+    "strength_field_dominance",
+    "strength_upset_potential",
+    "strength_favorite_indicator",
+]
+
+# Phase 1 feature names (for enricher.py reference)
+PHASE1_FEATURE_NAMES = [
+    "consensus_agreement_signal",
+    "consensus_agreement_strength",
+    "consensus_divergence_factor",
+    "consensus_is_consensus_pick",
+    "conf_a_position",
+    "conf_b_position",
+    "conf_combined_confidence",
+    "conf_agreement",
+    "conf_banker_signal",
+    "scenario_venue_alignment",
+    "scenario_field_strength",
+    "scenario_expected_uncertainty",
+    "recency_3races_win_rate",
+    "recency_6races_trend",
+    "recency_form_momentum",
+    "recency_layoff_penalty",
+    "recency_strength",
+    "pairing_jockey_horse_affinity",
+    "pairing_jockey_recent_form",
+    "pairing_distance_affinity",
+    "pairing_confidence",
+    "strength_vs_field_speed",
+    "strength_vs_field_winrate",
+    "strength_field_dominance",
+    "strength_upset_potential",
+    "strength_favorite_indicator",
 ]
 
 # Encoding maps (used by backtest runner)
