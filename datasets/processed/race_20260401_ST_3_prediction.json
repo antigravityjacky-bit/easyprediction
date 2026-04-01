@@ -1,0 +1,166 @@
+{
+  "race": "20260401_ST_3",
+  "race_info": {
+    "date": "2026-04-01",
+    "time": "19:45",
+    "venue": "SHA_TIN",
+    "venue_code": "ST",
+    "race_no": 3,
+    "distance": 1650,
+    "field_size": 14,
+    "classification": "CLASS_4",
+    "rating_range": "60-40"
+  },
+  "predictor_comparison": {
+    "a_prediction": [4, 10, 12, 13],
+    "b_prediction": [3, 4, 1, 8],
+    "consensus": [4],
+    "a_only": [10, 12, 13],
+    "b_only": [3, 1, 8],
+    "consensus_strength": "WEAK (1/14 = 7.1%)"
+  },
+  "predictions": [
+    {
+      "rank": 1,
+      "horse_number": 4,
+      "horse_name": "天威",
+      "jockey": "潘頓",
+      "trainer": "羅富全",
+      "rating": 54,
+      "jockey_top3_rate": 0.524,
+      "weight_kg": 1138,
+      "recent_form": "5/6/8/9/8/13",
+      "recent_form_avg": 8.2,
+      "confidence": "VERY_HIGH",
+      "confidence_score": 0.95,
+      "rationale": "A和B共識馬 | 潘頓騎師52.4%(全場最強!) | 評分54中高 | Race 2改進邏輯首選"
+    },
+    {
+      "rank": 2,
+      "horse_number": 3,
+      "horse_name": "開心五月",
+      "jockey": "布文",
+      "trainer": "告東尼",
+      "rating": 55,
+      "jockey_top3_rate": 0.335,
+      "weight_kg": 1130,
+      "recent_form": "8/7/5/8/11/6",
+      "recent_form_avg": 6.0,
+      "confidence": "HIGH",
+      "confidence_score": 0.85,
+      "rationale": "B獨選 | 布文33.5%(Race 2驗證強騎師) | 評分55 | 近績穩定6.0"
+    },
+    {
+      "rank": 3,
+      "horse_number": 8,
+      "horse_name": "日日獎",
+      "jockey": "奧爾民",
+      "trainer": "方嘉柏",
+      "rating": 49,
+      "jockey_top3_rate": 0.277,
+      "weight_kg": 1192,
+      "recent_form": "7/11/13/13/8/5",
+      "recent_form_avg": 9.3,
+      "confidence": "MEDIUM_HIGH",
+      "confidence_score": 0.72,
+      "rationale": "B獨選 | 奧爾民27.7% | 體重1192kg(+6.0%優勢) | Race 2體重邏輯驗證"
+    }
+  ],
+  "top3_prediction": [4, 3, 8],
+  "decision_logic": {
+    "tier1_analysis": {
+      "jockey_strength_ranking": [
+        {"horse": 4, "jockey": "潘頓", "rate": 0.524, "level": "HIGHEST"},
+        {"horse": 3, "jockey": "布文", "rate": 0.335, "level": "HIGH"},
+        {"horse": 8, "jockey": "奧爾民", "rate": 0.277, "level": "MEDIUM"},
+        {"horse": 1, "jockey": "周俊樂", "rate": 0.272, "level": "MEDIUM"},
+        {"horse": 10, "jockey": "希威森", "rate": 0.164, "level": "LOW"}
+      ],
+      "observation": "潘頓(52.4%) >> 布文(33.5%) >> 其他 | Race 2教訓:騎師優先於評分"
+    },
+    "race2_validation": {
+      "pattern": "騎師強度 > 評分高度",
+      "race2_example": "9號(32分,27.7%騎師) > 6號(36分,22.3%騎師)",
+      "race3_application": "4號(54分,52.4%騎師) > 1號(59分,27.2%騎師)"
+    },
+    "weight_advantage": {
+      "observation": "Race 2: 9號體重1264kg贏得比賽",
+      "race3_candidates": [
+        {"horse": 13, "weight": 1229, "advantage": "+9.2%", "score": 44},
+        {"horse": 8, "weight": 1192, "advantage": "+6.0%", "score": 49},
+        {"horse": 4, "weight": 1138, "advantage": "+1.2%", "score": 54}
+      ],
+      "selected": 8,
+      "reasoning": "體重優勢+騎師27.7%+教練優勢 > 13號(體重優勢但評分低44)"
+    },
+    "excluded_horses": {
+      "1_奮鬥心": {
+        "score": 59,
+        "jockey_rate": 0.272,
+        "reason": "評分最高但騎師27.2% < 潘頓52.4%, Race 2教訓: 不選"
+      },
+      "10_林寶精神": {
+        "score": 46,
+        "jockey_rate": 0.164,
+        "reason": "騎師弱16.4%, A選擇但我們優先騎師強度"
+      },
+      "13_午夜快車": {
+        "score": 44,
+        "weight": 1229,
+        "reason": "體重最重但評分44最低, 風險過高"
+      }
+    }
+  },
+  "risk_factors": {
+    "consensus_weakness": "共識僅1匹(4號), vs Race 2的2匹 | 信號強度下降",
+    "hidden_information": "A選擇低評分馬(10/12/13), 可能掌握隱藏信息",
+    "race_classification_difference": "Class 4 (評分60-40) vs Race 2 Class 5 (評分40-0) | 馬匹質量差異",
+    "weight_impact_uncertainty": "體重優勢在高級賽事的影響程度未明確"
+  },
+  "validation_checkpoints": {
+    "consensus_4_hit": {
+      "prediction": "Should win or place",
+      "hypothesis": "潘頓52.4%騎師強度應該兌現"
+    },
+    "jockey_priority_holds": {
+      "prediction": "布文(3號) > 周俊樂(1號)",
+      "hypothesis": "Race 2驗證的騎師優先邏輯是否在Race 3持續"
+    },
+    "weight_advantage_contributes": {
+      "prediction": "8號(+6.0%)應該入位",
+      "hypothesis": "體重優勢在1650m讓賽中是否有幫助"
+    }
+  },
+  "alternative_scenarios": {
+    "if_consensus_fails": {
+      "scenario": "4號(潘頓)落選",
+      "likely_reasons": [
+        "隱藏因素(馬房/距離特化)被低估",
+        "潘頓52.4%在Class 4無法兌現"
+      ],
+      "backup_prediction": "[3, 8, 1]"
+    },
+    "if_weight_dominates": {
+      "scenario": "體重是決定因素",
+      "likely_winners": "[4, 13, 8]",
+      "note": "13號(1229kg)可能超越評分考量"
+    }
+  },
+  "comparison_matrix": {
+    "our_strategy": {
+      "approach": "騎師優先 + 體重補強 + 評分次要",
+      "focus": "Race 2改進邏輯的延續驗證"
+    },
+    "a_strategy": {
+      "approach": "騎師 + 體重 + 教練 + 冷門馬",
+      "focus": "潘頓(4) + 體重(13) + 教練優勢(12) + 冒險(10)"
+    },
+    "b_strategy": {
+      "approach": "騎師強度 + 評分平衡",
+      "focus": "潘頓(4) + 布文(3) + 周俊樂(1) + 中立(8)"
+    }
+  },
+  "status": "READY_FOR_RACE",
+  "timestamp": "2026-04-01T19:30:00+08:00",
+  "notes": "Race 3將進行模式驗證: 騎師優先邏輯是否跨越不同級別(Class 5→Class 4)保持有效 | 共識弱化是否影響預測精度 | 體重優勢在高級賽事的作用"
+}
