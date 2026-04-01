@@ -291,7 +291,7 @@ class Phase1Enricher:
         # Filter to prior races only
         prior_jockey_positions = [
             self.jockey_horse_pairs[(jockey, horse)][i]
-            for i in range(len(jockey_horse_pairs.get((jockey, horse), [])))
+            for i in range(len(self.jockey_horse_pairs.get((jockey, horse), [])))
             if i < len(prior_hist)
         ]
 
